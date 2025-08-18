@@ -1,0 +1,54 @@
+body {
+   background: rgb(26, 25, 25); 
+   color:white;
+   text-align: center;
+}
+
+h1 {
+    background-color:orange ;
+    color: white;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(238, 161, 68);
+    border: 2px solid orange;
+    padding: 15px;
+
+}
+
+h3 {
+    background-color: rgb(121, 71, 9);
+    color: rgb(240, 233, 225);
+    border: 5px solid rgb(228, 153, 15);
+    padding: 15px;
+}
+
+h4, h5, h6 {
+    color: rgb(238, 161, 68);
+}
+
+img {
+    border-radius: 10px;
+    border: 8px solid #000;
+}
+ol {
+  color: rgb(243, 241, 238);
+  text-align: center;
+}
+
+a {
+    
+    font-size: 24px;
+    color:white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.item{
+    background-color: white;
+    color: rgb(238, 161, 68);
+    
+    }

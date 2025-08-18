@@ -1,0 +1,51 @@
+body{
+    background:#CDC9C9;
+    color: rgb(10, 9, 9);
+   
+}
+h1 {
+    background-color: #6E7B8B;
+    text-align: center;
+    
+}
+.container {
+    max-width: 900px;
+     margin: 0 auto;
+    background-color: #6E7B8B;
+    border: 2px solid rgb(82, 71, 71);
+}
+
+.numero{
+    text-align: center;
+    color: rgb(10, 9, 9);
+   
+     
+    
+}
+.curriculo {
+    text-align: justify;
+   
+}
+
+
+.experiencias {
+    text-align: justify;
+    
+}
+
+.formação {
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, h2 {
+    color: rgb(7, 6, 6);
+}
+
+.livres {
+    text-align: justify;
+}
+
