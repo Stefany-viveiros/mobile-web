@@ -79,7 +79,7 @@ header h2 {
 
 /*Content HOME */
 .content-box {
-    margin: 20px;
+    margin: 10px;
     display: flex;
     
 }
@@ -131,10 +131,61 @@ header h2 {
 .promocao img {
     max-width: 800px;
     height: 180x;
-    border: 2px solid rgb(22, 19, 28);
+    border: 2px solid rgb(65, 53, 91);
     border-radius: 10px;
     margin: 20px;
     /*cortar imagem*/
     overflow: hidden;
     
 }
+
+/*NOVIDADES */
+.novidades {
+   
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(175, 185, 213);
+   
+}
+
+.novidades span {
+    font-size: 150px;
+}
+
+.novidades article {
+   
+    display: flex;
+    align-items: center;  
+    width: 100%;
+    justify-content: center;
+}
+
+
+.novidades form input {
+    background-color: #dbe2e9;
+    max-width: 300px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+   
+    text-align: center;
+}
+
+.novidades form {
+    width: 100%;
+}
+
+.novidades form button {
+   
+    background-color: rgb(102, 147, 214);
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+   
+}
+
