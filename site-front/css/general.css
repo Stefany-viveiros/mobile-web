@@ -145,7 +145,7 @@ header h2 {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    background-color:  rgb(102, 147, 214);
+    background-color:  rgb(214, 214, 237);
    
 }
 
@@ -196,4 +196,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* Página sobre*/
+.spaceSobre {
+    margin: 20px 0 25px 0;
 }
