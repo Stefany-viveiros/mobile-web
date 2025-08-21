@@ -145,7 +145,7 @@ header h2 {
     margin-top: 20px;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(175, 185, 213);
+    background-color:  rgb(102, 147, 214);
    
 }
 
@@ -180,8 +180,8 @@ header h2 {
 
 .novidades form button {
    
-    background-color: rgb(102, 147, 214);
-    color: white;
+    background-color: #dbe2e9;
+    color: rgb(34, 32, 52);
     border-radius: 10px;
     cursor: pointer;
     padding: 10px;
@@ -189,3 +189,11 @@ header h2 {
    
 }
 
+footer {
+    background: #0b0438;
+    color: #fff;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
