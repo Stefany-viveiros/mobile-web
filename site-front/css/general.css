@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    list-style: none;
+    
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -43,6 +43,7 @@ header h2 {
     justify-content:space-around;
     align-items: center;
     background-color: #dadcdf94;
+    list-style: none;
     
 }
 
@@ -201,4 +202,10 @@ footer {
 /* Página sobre*/
 .spaceSobre {
     margin: 20px 0 25px 0;
+}
+
+p {
+   margin: 20px 0 25px 0;
+   text-align: justify;
+
 }
