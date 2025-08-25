@@ -200,7 +200,7 @@ footer {
 }
 
 /* Página sobre*/
-.spaceSobre {
+.spaceSobre, .spaceContato {
     margin: 20px 0 25px 0;
 }
 
@@ -245,5 +245,23 @@ footer {
 }
 
 .passeios img {
-    width: 350px;
+    width: 280px;
+    padding: 10px;
+    display: block;
+    color: rgb(71, 138, 225);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/*Página contato*/
+.text-contato {
+    margin: 0 0 20px 20px;
+    font-size: 30px;
+
+}
+
+.text-contato strong {
+    color: #1e1ede;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
