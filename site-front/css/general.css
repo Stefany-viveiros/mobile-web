@@ -235,8 +235,8 @@ footer {
 }
 
 .titulo,.classe1 {
-    border: 1px solid #0b0438;
-    text-align: center;
+    
+    text-align: justify;
     margin: 20px 0 25px 0;
     
     color:#2b6cb0;
