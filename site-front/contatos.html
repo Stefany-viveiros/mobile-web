@@ -32,12 +32,12 @@
         <form>
             <article class="form-group">
                 <label for="nome">Nome</label>
-                <input type="text" id="nome"/>
+                <input type="text" id="nome" placeholder="Digite seu nome"/>
             </article>
 
             <article class="form-group">
                 <label for="email">Email</label>
-                <input type="text" id="email"/>
+                <input type="text" id="email" placeholder="Digite seu email"/>
             </article>
 
             <article class="form-group-sexo">
@@ -73,7 +73,7 @@
             
         <article>
             <fieldset>
-                <legend>Receber email</legend>
+                <legend class="title">Receber email</legend>
                 <section class="form-group-info">
                     <label for="sim">Sim</label>
                     <input type="checkbox" id="sim">
@@ -87,8 +87,22 @@
         </article>
 
         <article class="form-group-info">
-            <label for="nivel">Nivel de Satisfação</label>
+            <label for="nivel" class="title">Nivel de Satisfação</label>
             <input type="range" id="nivel" min="0" max="10">
+        </article>
+
+        <article class="form-group-info">
+            <label for="doc" >Importar arquivo</label>
+            <input type="file" id="doc">
+        </article>
+
+        <article class="form-group-info">
+            <label for="descricao" class="title">Descrição</label>
+            <textarea  id="descricao" class="comentario"></textarea>
+        </article>
+
+        <article class="botão">
+            <button type="submit" class="btn-enviar">Enviar informações</button>
         </article>
 
         </form>
