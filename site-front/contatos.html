@@ -62,15 +62,35 @@
         <article class="form-group">
             <select>
                 <option>Selecione Estado</option>
-                <option value="SP"></option>
-                <option value="RJ"></option>
-                <option value="PR"></option>
-                <option value="MG"></option>
-                <option value="Outros"></option>
+                <option value="SP">SP</option>
+                <option value="RJ">RJ</option>
+                <option value="PR">PR</option>
+                <option value="MG">MG</option>
+                <option value="Outros">Outros</option>
                 
             </select>
         </article>
             
+        <article>
+            <fieldset>
+                <legend>Receber email</legend>
+                <section class="form-group-info">
+                    <label for="sim">Sim</label>
+                    <input type="checkbox" id="sim">
+                </section>
+            </fieldset>
+        </article>
+
+        <article class="form-group-info">
+            <label for="idade">Idade</label>
+            <input type="number" id="idade" min="0" max="120" class="form-control-padrao"/>
+        </article>
+
+        <article class="form-group-info">
+            <label for="nivel">Nivel de Satisfação</label>
+            <input type="range" id="nivel" min="0" max="10">
+        </article>
+
         </form>
     </main>
 </body>
