@@ -13,9 +13,9 @@ function diasParaNiver() {
 function atualizarHora(){
     const horaHtml = document.getElementById("hora");
     const agora = new Date();
-    const hora = agora.getHours();
-    const minutos = agora.getMinutes();
-    const segundos = agora.getSeconds();
+    const hora = agora.getHours().toString(). padStart(2, '0');
+    const minutos = agora.getMinutes(). toString(). padStart(2,'0');
+    const segundos = agora.getSeconds(). toString(). padStart(2,'0');
 
     horaHtml.textContent = `${hora}:${minutos}:${segundos}`;
     

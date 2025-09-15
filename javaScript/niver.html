@@ -7,13 +7,15 @@
     <title>Niver</title>
     <style>
         * {
+           
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
+        
 
         main {
-            background-color: rgb(232, 232, 232);
+            background-color: rgb(171, 219, 223);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -23,25 +25,42 @@
         .niverRodrigo {
             background-color: rgb(60, 107, 168);
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 20px;
             box-shadow: 0px 0px 10px rgb(7, 173, 202);
-            border: 2px solid rgb(8, 6, 53);
+            border: 2px solid rgb(69, 21, 202);
+            text-align: center;
+            background-color: rgb(78, 65, 192);
+            color: rgb(12, 12, 12);
+            margin: 20px;
         }
 
         span {
             font-size: 50px;
             font-family: Arial, Helvetica, sans-serif;
             color: rgb(48, 192, 236);
-            text-shadow: 0px 0px 2px #422e66;
+            text-shadow: 0px 0px 2px #56d6d6;
             
         }
-
-        h1 {
+        
+        
+         h2, .hora{
+            background-color: rgb(15, 31, 180);
+            color: rgb(233, 230, 230);
+            border-radius: 10px;
+            align-items: center;
+            background-color: rgb(219, 44, 111);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgb(27, 203, 235);
+            border: 2px solid rgb(113, 108, 207);
             text-align: center;
-            background-color: rgb(78, 65, 192);
-            color: rgb(12, 12, 12);
-            margin: 20px;
+            background-color: rgb(163, 242, 245);
+            color: rgb(91, 91, 235);
+            margin: 50px;
+            font-family: Arial, Helvetica, sans-serif;
         }
+
+        
 
     </style>
 </head>
@@ -51,8 +70,9 @@
 
     <main>
         <div class="niverRodrigo">
-            <h1 class="dias">Faltam <span id="dias"></span> dias para o aniversário do rodrigo 🎂</h1>
-            <h2>Hora Atual: <span id="hora"></span></h2>
+            <h1>Faltam <span id="dias"></span> dias para o aniversário do Rodrigo 🎂</h1>
+            <h2>Hora Atual</h2>
+            <h2 class="hora"> <span id="hora"></span></h2>
         </div>
     </main>
 
