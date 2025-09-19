@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(133, 184, 184);
+}
+
+.container {
+    text-align: center;
+    background-color: rgb(59, 29, 129);
+    color: rgb(191, 189, 194);
+    border: 1px solid white;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    background-color: aqua;
+    color: black;
+
+}
+button {
+    background-color: rgb(121, 217, 255);
+    border-radius: 10px;
+    border-bottom: 10px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+h2 {
+    background-color: rgb(198, 198, 214);
+    color: black;
+}
