@@ -24,18 +24,22 @@ function App() {
       caption="Uma imagem interessante"
       imagem= {img1}
       texto= "Popeto new"
+      link= "https://www.terra.com.br/"
       />
 
       <ImgCard
       caption="Olá Popeto" 
       imagem={img2}
       texto="Popeto Bangu"
+      link= "https://www.uol.com.br/"
       />
 
       <ImgCard
       caption="Caio do Futebol" 
       imagem={img3}
-      texto="Popeto 3"/>
+      texto="Popeto 3"
+      link="https://www.cnnbrasil.com.br/"
+      />
 
 
       <Button text="Clique aqui!" onclick={handleClick}/>

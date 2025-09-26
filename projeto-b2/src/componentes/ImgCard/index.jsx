@@ -13,6 +13,11 @@ console.log(props)
         <p>
           {props.texto}
         </p>
+
+        <a href={props.link} target="_black">
+          Link
+        
+        </a>
     </div>
   )
 
