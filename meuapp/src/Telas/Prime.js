@@ -47,14 +47,20 @@ const estilos = StyleSheet.create({
  },
     cursosContent:{
     width:"100%",
-    textAlign:"center",
-    backgroundColor:"gray",
-    paddingTop:30,
-    marginTop:20,
+    marginTop:10,
     fontSize:18,
-    borderRadius:20,
+    borderRadius:10,
     color:"black",
     fontFamily:"arial",
+    flexDirection:"row",
+    alignItems:"center",
+    marginBotton:8,
+    padding:12,
+    backgroundColor:"gray",
+    borderWidth:1,
+    borderColor:"purple",
+    elevation:3,
+    
     
 
     
