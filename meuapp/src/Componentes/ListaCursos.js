@@ -33,7 +33,9 @@ container:{
     
 
 },
-
+cursos:{
+    backgroundColor:"black",
+},
 lastItem: {
     flexDirection:"row",
     alignItems:"center",
@@ -44,7 +46,16 @@ lastItem: {
     borderWidth:1,
     borderColor:"purple",
     borderRadius:10,
-    elevation:3,
+    flexDirection:"row",
+    alignItems:"center",
+    marginBotton:8,
+    color:"black",
+    padding:12,
+    backgroundColor:"gray",
+    borderWidth:3,
+    borderColor:"purple",
+    borderRadius:8,
+    elevation:5,
     marginTop:10,
 
    
