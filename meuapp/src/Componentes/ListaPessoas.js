@@ -40,9 +40,9 @@ export default function ListaPessoas() {
         <View>
             <Text style={estilos.teste}>Teste</Text>
             {pessoas.map((pessoa) => (
-                <View style={estilos.pessoas}>
-                    <Text>{pessoa.nome}</Text>
-                    <Text>{pessoa.idade}</Text>
+                <View style={estilos.card}>
+                    <Text style={estilos.pessoas}>{pessoa.nome}</Text>
+                    <Text style={estilos.pessoas}>{pessoa.idade}</Text>
 
                 </View>
             ))}
@@ -54,28 +54,39 @@ const estilos = StyleSheet.create({
         flexDirection: "row",
         alignItems: "center",
         backgroundColor: "gray",
-        padding: 12,
+        padding: 10,
         marginTop: 8,
         borderRadius: 10,
         borderColor: "purple",
         marginBottom: 8,
         fontFamily: "arial",
         borderWidth: 2,
-        marginRight:20,
-        marginLeft: 20,
+        marginRight:10,
+        marginLeft: 10,
         gap:3,
-        fontSize:20,
+        fontSize:10,
         elevation:3,
     },
+
     teste: {
         backgroundColor: "black",
         color: "white",
         textAlign: "center",
-        fontSize: 22,
+        fontSize: 20,
         fontWeight:"bold",
         borderRadius: 8,
         fontFamily: "arial",
         padding: 10,
+        
+    },
+
+    card:{
+        backgroundColor:"gray",
+        padding:15,
+        borderRadius:10,
+        borderColor:"blue",
+        borderWidth:1,
+        marginBottom:10
         
     }
 
