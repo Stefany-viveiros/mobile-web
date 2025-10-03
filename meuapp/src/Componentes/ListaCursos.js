@@ -21,7 +21,6 @@ const data =["React Native", "MoNGO DB", "Express", "Node.js"];
 
 const estilos = StyleSheet.create({
 container:{
-    marginTop:40,
     padding:20,
     backgroundColor:"white",
     color:"white",
@@ -29,7 +28,7 @@ container:{
     fontSize:20,
     fontFamily:"arial",
     borderRadius:20,
-    marginTop:20,
+    marginTop:10,
     
 
 },
@@ -37,15 +36,6 @@ cursos:{
     backgroundColor:"black",
 },
 lastItem: {
-    flexDirection:"row",
-    alignItems:"center",
-    marginBotton:8,
-    color:"black",
-    padding:12,
-    backgroundColor:"gray",
-    borderWidth:1,
-    borderColor:"purple",
-    borderRadius:10,
     flexDirection:"row",
     alignItems:"center",
     marginBotton:8,

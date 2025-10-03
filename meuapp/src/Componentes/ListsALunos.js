@@ -1,7 +1,7 @@
 import {Text, View, StyleSheet, FlatList, ScrollView} from "react-native";
 
 export default function ListsALunos() {
-    const alunos = ["Rodrigo", "Juliana", "Paty", "Bruno", "Fernando"];
+    const alunos = ["Rodrigo", "Juliana", "Paty", "Bruno", "Fernando", "Stefany"];
   return (
     <View style={estilos.topo}>
         <Text style={estilos.comeco}>Lista de alunos</Text>
@@ -30,8 +30,10 @@ comeco: {
     fontFamily:"arial",
     padding:10,   
 },
+
 topo:{
     padding:15,
+   
 },
 
 aluno:{
@@ -39,7 +41,8 @@ aluno:{
     borderRadius:10,
     padding:15,
     gap:10,
-   
+    fontFamily:"arial",
+
 },
 
 usuarios:{
@@ -47,15 +50,21 @@ usuarios:{
     alignItems:"center",
     backgroundColor:"gray",
     paddingLeft:15,
+    marginTop:10,
+    borderRadius:10,
+    borderColor:"purple",
+    marginBottom:2,
+    fontFamily:"arial",
+    elevation:3,
+    borderWidth:2,
+
 },
+
 centro:{
     fontSize:20,
-    marginRight:8,
-    
-    
-    
-}
-  
+    marginRight:8,   
+
+}  
 });
   
   

@@ -1,6 +1,7 @@
 import {View, StyleSheet,Text} from "react-native";
 import ListaCursos from "../Componentes/ListaCursos";
 import ListsALunos from "../Componentes/ListsALunos";
+import ListaPessoas from "../Componentes/ListaPessoas";
 
 export default function Prime() {
   return (
@@ -8,6 +9,8 @@ export default function Prime() {
         <View style={estilos.topo}>
           <Text style={estilos.tituloHeader}>Cursos SENAI</Text>
         </View>
+       
+       <ListaPessoas/>
        
           <View style={estilos.cursos}>
           <Text style={estilos.cursosContent}>HTML Completo</Text>
@@ -20,6 +23,7 @@ export default function Prime() {
         <ListaCursos/>
 
         <ListsALunos/>
+      
       </>
     
     
@@ -37,7 +41,7 @@ const estilos = StyleSheet.create({
   
  },
 cursos:{
-  backgroundColor:"black",
+  
   marginTop:10,
 },
 
@@ -67,7 +71,7 @@ cursos:{
     marginRight:20,
     marginLeft:20,
     borderWidth:3,
-    borderColor:"purple",
+   
     
     
 
