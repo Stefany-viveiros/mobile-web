@@ -38,9 +38,10 @@ export default function ListaPessoas() {
 
     return (
         <View>
-            <Text style={estilos.teste}>Teste</Text>
+            <Text style={estilos.teste}>Lista de Pessoas</Text>
             {pessoas.map((pessoa) => (
                 <View style={estilos.card}>
+                    <Text style={estilos.pessoas}>{pessoa.id}</Text>
                     <Text style={estilos.pessoas}>{pessoa.nome}</Text>
                     <Text style={estilos.pessoas}>{pessoa.idade}</Text>
 
@@ -51,21 +52,18 @@ export default function ListaPessoas() {
 }
 const estilos = StyleSheet.create({
     pessoas: {
-        flexDirection: "row",
+       
         alignItems: "center",
-        backgroundColor: "gray",
-        padding: 10,
-        marginTop: 8,
-        borderRadius: 10,
+        backgroundColor: "#798499",
+        padding: 15,
         borderColor: "purple",
-        marginBottom: 8,
         fontFamily: "arial",
-        borderWidth: 2,
-        marginRight:10,
-        marginLeft: 10,
-        gap:3,
-        fontSize:10,
-        elevation:3,
+        marginRight:50,
+        marginLeft: 50,
+        fontSize:12,
+        fontWeight:"bold",
+        
+
     },
 
     teste: {
@@ -74,19 +72,17 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         fontSize: 20,
         fontWeight:"bold",
-        borderRadius: 8,
         fontFamily: "arial",
         padding: 10,
+        marginBottom: 15,
         
     },
 
     card:{
-        backgroundColor:"gray",
-        padding:15,
-        borderRadius:10,
-        borderColor:"blue",
-        borderWidth:1,
-        marginBottom:10
+        backgroundColor:"white",
+        padding:5,
+        marginBottom:4,
+        
         
     }
 
