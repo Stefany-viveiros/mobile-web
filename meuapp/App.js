@@ -1,13 +1,14 @@
 
+import MainNavigator from './MainNavigator';
 import Header from './src/Componentes/Header';
-import Card from './src/Componentes/Card';
+
 
 export default function App() {
   return (
     <>
     
       <Header/>
-      <Card/>
+      <MainNavigator/>
     
   </>
 
