@@ -17,17 +17,18 @@ const estilos = StyleSheet.create({
         borderBottomColor: "#9c9ca1ff",
         borderBottomWidth:3,
         textAlign:"center",
+       
     },
 
     tituloHeader: {
         width:"100%",
         textAlign:"center",
-        color:"#F09822",
+        color:"#F07716",
         fontWeight: "bold",
-        fontSize:25,
+        fontSize:32,
         paddingTop:40,
-
-
+        fontFamily:"arial",
+        
 
     }
 })
