@@ -20,13 +20,13 @@ const estilos = StyleSheet.create({
     titulo:{
         height:60,
         backgroundColor:"#F0AA3E",
-        Color:"white",
+        color:"black",
         borderBottomWidth:3,
         textAlign:"center",
         padding:10,
         borderRadius:8,
         marginTop:10,
-        borderBottomColor: "#838386ff",
+        borderBottomColor: "#6c6c6dff",
         borderBottomWidth:3,
         marginRight:10,
         marginLeft:10,
@@ -35,16 +35,19 @@ const estilos = StyleSheet.create({
     },
 
     duvidas:{
-        backgroundColor:"#838386ff",
-        color:"white",
-        padding:10,
+        backgroundColor:"#c5c4c2ff",
+        color:"#333131",
+        padding:30,
         borderRadius:8,
-        marginTop:10,
+        marginTop:20,
         borderBottomColor:"orange",
         borderBottomWidth:3,
         marginRight:10,
         marginLeft:10,
         height:90,
+        textAlign:"center",
+        fontSize:20,
+        fontFamily:"arial"
         
 
 

@@ -16,5 +16,6 @@ export default function MainNavigator() {
             <Stack.Screen name="Faq" component={Faq} />
         </Stack.Navigator>
     </NavigationContainer>
+    
   )
 }

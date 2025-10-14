@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function Header() {
   return (
     <View style={estilos.topo}>
-        <Text style={estilos.tituloHeader}>Fut Popeto</Text>
+        <Text style={estilos.tituloHeader}>LojaSENAI</Text>
     </View>
   )
 }
@@ -23,7 +23,7 @@ const estilos = StyleSheet.create({
     tituloHeader: {
         width:"100%",
         textAlign:"center",
-        color:"#F07716",
+        color:"#49B1F5",
         fontWeight: "bold",
         fontSize:32,
         paddingTop:40,
