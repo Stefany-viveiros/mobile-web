@@ -3,12 +3,22 @@
     {
         "id" : "1",
         "nome": "João Silva",
-        "telefone" : "78918845"
+        "telefone" : "(11) 7891-8845"
     },
     {
          "id" : "2",
         "nome": "Bianca Silva",
-        "telefone" : "60845712"
+        "telefone" : "(41) 6084-5712"
+    },
+    {
+       "id" : "10",
+        "nome": "Gabs",
+        "telefone" : "(11) 8557-8425"
+    },
+    {
+       "id" : "226",
+        "nome": "Stefany Barbosa",
+        "telefone" : "(11) 1012-5455"
     }
   ],
 
