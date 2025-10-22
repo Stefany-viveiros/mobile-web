@@ -1,38 +1,66 @@
 {
-  "contatos" :[
+  "contatos": [
     {
-        "id" : "1",
-        "nome": "João Silva",
-        "telefone" : "(11) 7891-8845"
+      "id": "1",
+      "nome": "João Silva",
+      "telefone": "(11) 7891-8845"
     },
     {
-         "id" : "2",
-        "nome": "Bianca Silva",
-        "telefone" : "(41) 6084-5712"
+      "id": "2",
+      "nome": "Bianca Silva",
+      "telefone": "(41) 6084-5712"
     },
     {
-       "id" : "10",
-        "nome": "Gabs",
-        "telefone" : "(11) 8557-8425"
+      "id": "10",
+      "nome": "Gabs",
+      "telefone": "(11) 8557-8425"
     },
     {
-       "id" : "226",
-        "nome": "Stefany Barbosa",
-        "telefone" : "(11) 1012-5455"
+      "id": "226",
+      "nome": "Stefany Barbosa",
+      "telefone": "(11) 1012-5455"
+    },
+    {
+      "id": "cc1c",
+      "nome": "ddddd",
+      "telefone": "5555dd"
+    },
+    {
+      "id": "d2be",
+      "nome": "Stefany",
+      "telefone": "44555555"
+    },
+    {
+      "id": "6da6",
+      "nome": "Fernanda",
+      "telefone": "11223877"
+    },
+    {
+      "id": "2167",
+      "nome": "dddd",
+      "telefone": "dddd"
+    },
+    {
+      "id": "6592",
+      "nome": "laura",
+      "telefone": "5555"
+    },
+    {
+      "id": "4b51",
+      "nome": "stefany",
+      "telefone": "4555"
     }
   ],
-
-"faq": [
+  "faq": [
     {
-    "id":1,
-    "pergunta": "O que é JSON SERVER?",
-    "resposta": "JSON server é uma ferramenta que permite...."
+      "id": "1",
+      "pergunta": "O que é JSON SERVER?",
+      "resposta": "JSON server é uma ferramenta que permite...."
     },
-    
     {
-        "id":45,
-    "pergunta": "O que é PHP?",
-    "resposta": "PHP é uma linguagem de programação utilizada para administar banco de dados...."
+      "id": "45",
+      "pergunta": "O que é PHP?",
+      "resposta": "PHP é uma linguagem de programação utilizada para administar banco de dados...."
     }
-]
+  ]
 }
