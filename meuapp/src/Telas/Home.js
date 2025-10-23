@@ -31,6 +31,13 @@ export default function Home() {
        
         />
         
+      <Card
+        title="Duvidas"
+        content="Para mais informações"
+        textButton="Ir para a página de duvidas"
+        onPress={() => navigation.navigate("Duvidas")}
+       
+        />
 
     </View>
   )

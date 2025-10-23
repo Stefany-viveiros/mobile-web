@@ -30,7 +30,7 @@
     },
     
     {
-        "id":45,
+    "id":45,
     "pergunta": "O que é PHP?",
     "resposta": "PHP é uma linguagem de programação utilizada para administar banco de dados...."
     }

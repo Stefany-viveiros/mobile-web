@@ -14,7 +14,10 @@ export default function Faq() {
         <Text style={estilos.titulo}>Como alterar o meu cadastro?</Text>
     </View>
   )
+
 }
+
+
 
 const estilos = StyleSheet.create({
     titulo:{
