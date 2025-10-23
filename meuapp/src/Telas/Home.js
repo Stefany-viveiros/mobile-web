@@ -1,5 +1,5 @@
 import React from 'react'
-import {Text, View } from 'react-native'
+import {Text, View, ScrollView } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import Card from "../Componentes/Card"
 
@@ -7,7 +7,7 @@ import Card from "../Componentes/Card"
 export default function Home() {
   const navigation = useNavigation()
   return (
-    <View>
+    <ScrollView>
         <Card
         title="Sobre"
         content="Saiba mais sobre nós e nossos serviços"
@@ -47,6 +47,6 @@ export default function Home() {
        
         />
 
-    </View>
+    </ScrollView>
   )
 }

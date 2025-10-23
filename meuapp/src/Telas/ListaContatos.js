@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Text, View, StyleSheet, ScrollView, Button } from 'react-native'
+import { Text, View, StyleSheet, ScrollView, Button, TouchableOpacity } from 'react-native'
 import axios from 'axios';
 
 
@@ -43,17 +43,23 @@ export default function ListaContatos() {
         <ScrollView>
             <Text style={estilos.contatos}>Lista de Contatos</Text>
             {contatos.length > 0 ? (
-                contatos.map((contato, index) => (
-                    <View style={estilos.topo} key={index}>
-                    <Text style={estilos.nome}>Nome: {contato.nome}</Text>
-                    <Text style={estilos.nome}> Tel: {contato.telefone}</Text>
+                contatos.map((contato, index) => {
+                    return (
+                        <View style={estilos.topo} key={index}>
+                            <Text style={estilos.nome}>Nome: {contato.nome}</Text>
+                            <Text style={estilos.nome}> Tel: {contato.telefone}</Text>
 
-                    <Button
-                    title="Excluir"
-                    onPress={() => deleteContato(contato.id)}
-                    />
-                    </View>
-                ))
+                            {/* <Button style={estilos.button}
+            title="Excluir"
+            onPress={() => deleteContato(contato.id)}
+            /> */}
+
+                            <TouchableOpacity onPress={deleteContato}>
+                                <Text style={estilos.button}>Excluir</Text>
+                            </TouchableOpacity>
+                        </View>
+                    );
+                })
 
             ) : (
                 <Text> Nenhum contato disponivel </Text>
@@ -67,9 +73,10 @@ const estilos = StyleSheet.create({
         width:"100%",
         textAlign:"center",
         padding:20,
-        backgroundColor:"#D7D7DE",
-    
-        
+        backgroundColor:"#8ebad0ff",
+        borderBottomColor: "#1e348aff",
+        borderBottomWidth:1,
+        marginBottom:2,  
        
     },
     contatos:{
@@ -77,9 +84,9 @@ const estilos = StyleSheet.create({
         fontSize:20,
         textAlign:"center",
         padding:20,
-        backgroundColor:"gray",
-        borderBottomColor: "#1e348aff",
-        borderBottomWidth:3,
+        backgroundColor:"#4bb1e4ff",
+        borderBottomColor: "#134a89ff",
+        borderBottomWidth:2,
 
 
     },
@@ -93,8 +100,14 @@ const estilos = StyleSheet.create({
         marginTop:10,
         fontWeight:"bold"
         
-      
-        
+    },
+    button:{
+        backgroundColor:"red",
+        color:"white",
+        padding:8,
+        textAlign:"center",
+        borderRadius:5,
+        marginTop:2,
     }
 
 })
