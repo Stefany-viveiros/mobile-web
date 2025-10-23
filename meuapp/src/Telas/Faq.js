@@ -11,7 +11,7 @@ export default function Faq() {
         <Text style={estilos.titulo}>O que fazer quando não possui disponibilidade de produto?</Text>
         <Text style={estilos.titulo}>Não lembro da senha, como redefinir uma nova senha?</Text>
         <Text style={estilos.titulo}>Como verificar o status de entrega do produto?</Text>
-        <Text style={estilos.titulo}>Como alterar o meu cadastro?</Text>
+        <Text style={estilos.titulo}>Como alterar o meu cadastro????? </Text>
     </View>
   )
 
@@ -33,6 +33,8 @@ const estilos = StyleSheet.create({
         borderBottomWidth:3,
         marginRight:10,
         marginLeft:10,
+
+
         
        
     },

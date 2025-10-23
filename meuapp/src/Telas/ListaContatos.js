@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import { Text, View, StyleSheet } from 'react-native'
+import { Text, View, StyleSheet, ScrollView, Button } from 'react-native'
 import axios from 'axios';
+
 
 export default function ListaContatos() {
     const [contatos, setContatos] = useState([]);
@@ -17,26 +18,47 @@ export default function ListaContatos() {
             });
     }
 
+       // função para excuir
+    const deleteContato = (id) => {
+        axios
+            .delete(`http://10.0.2.2:3000/contatos/${id}`)
+            .then(() => {
+                //Atualizar lista de contatos 
+                setContatos(contatos.filter((contato) => contato.id !== id))
+                Alert.alert("Sucesso", "Contato Excluido")
+            })
+            .catch((error) => {
+                console.log("Erro excluir contato", error);
+                Alert.alert("Erro, não foi possivel excluir");
+            });
+    }
+
+
     // Use o useEffect para buscar dados
     useEffect(() => {
         listaContatos();
     }, [])
 
     return (
-        <View>
+        <ScrollView>
             <Text style={estilos.contatos}>Lista de Contatos</Text>
             {contatos.length > 0 ? (
                 contatos.map((contato, index) => (
                     <View style={estilos.topo} key={index}>
                     <Text style={estilos.nome}>Nome: {contato.nome}</Text>
                     <Text style={estilos.nome}> Tel: {contato.telefone}</Text>
+
+                    <Button
+                    title="Excluir"
+                    onPress={() => deleteContato(contato.id)}
+                    />
                     </View>
                 ))
 
             ) : (
                 <Text> Nenhum contato disponivel </Text>
             )}
-        </View>
+        </ScrollView>
     )
 }
 

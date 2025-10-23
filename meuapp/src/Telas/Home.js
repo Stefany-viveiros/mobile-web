@@ -30,6 +30,14 @@ export default function Home() {
         onPress={() => navigation.navigate("ListaContatos")}
        
         />
+
+        <Card
+        title="Cadastro"
+        content="Para mais informações"
+        textButton="Ir para Cadastro"
+        onPress={() => navigation.navigate("Cadastro")}
+       
+        />
         
       <Card
         title="Duvidas"
