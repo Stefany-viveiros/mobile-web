@@ -18,6 +18,7 @@ export default function ListaContatos() {
             });
     }
 
+
        // função para excuir
     const deleteContato = (id) => {
         axios
@@ -54,7 +55,7 @@ export default function ListaContatos() {
             onPress={() => deleteContato(contato.id)}
             /> */}
 
-                            <TouchableOpacity onPress={deleteContato}>
+                            <TouchableOpacity onPress={() => deleteContato(contato.id)}>
                                 <Text style={estilos.button}>Excluir</Text>
                             </TouchableOpacity>
                         </View>
@@ -76,7 +77,8 @@ const estilos = StyleSheet.create({
         backgroundColor:"#8ebad0ff",
         borderBottomColor: "#1e348aff",
         borderBottomWidth:1,
-        marginBottom:2,  
+        marginBottom:2, 
+         
        
     },
     contatos:{
@@ -84,9 +86,11 @@ const estilos = StyleSheet.create({
         fontSize:20,
         textAlign:"center",
         padding:20,
-        backgroundColor:"#4bb1e4ff",
+        backgroundColor:"#b1c9d4ff",
         borderBottomColor: "#134a89ff",
-        borderBottomWidth:2,
+        borderBottomWidth:1,
+        fontWeight:"bold",
+        color:"#115a8eff"
 
 
     },
@@ -108,6 +112,8 @@ const estilos = StyleSheet.create({
         textAlign:"center",
         borderRadius:5,
         marginTop:2,
+        borderBottomColor: "#5eb1deff",
+        borderBottomWidth:2,
     }
 
 })
