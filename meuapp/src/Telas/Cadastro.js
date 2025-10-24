@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Text, View, StyleSheet, TextInput, Button, Alert, TouchableOpacity  } from 'react-native'
+import { Text, View, StyleSheet, ScrollView, TextInput, Button, Alert, TouchableOpacity  } from 'react-native'
 import axios from 'axios';
 import { useNavigation } from '@react-navigation/native';
 
@@ -9,6 +9,13 @@ export default function Cadastro() {
     const [email, setEmail] = useState('');
     const navigation = useNavigation();
     const [endereco, setEndereco] = useState();
+    const [cep, setCep] = useState();
+    const [rua, setRua] = useState();
+    const [bairro, setBairro] = useState();
+    const [cidade, setCidade] = useState();
+    const [estado, setEstado] = useState();
+    const [numero, setNumero] = useState();
+
     const enviarContato = async () => {
         if (!nome || !telefone) {
             Alert.alert("Erro", "Por favor, preeencha todos os campos");
@@ -22,6 +29,14 @@ export default function Cadastro() {
                     Alert.alert("Sucesso", "Contato adicionado");
                     setNome('');
                     setTelefone('');
+                    setEmail('');
+                    setEndereco('');
+                    setCep('');
+                    setRua('');
+                    setBairro('');
+                    setCidade('');
+                    setEstado('');
+                    setNumero('');
                     
                     // AQUI ESTÁ A NAVEGAÇÃO - redireciona para a lista de contatos
                     navigation.navigate('ListaContatos');
@@ -36,7 +51,7 @@ export default function Cadastro() {
     }
 
     return (
-        <View style={estilos.container}>
+        <ScrollView style={estilos.container}>
             <Text style={estilos.label}>Nome:</Text>
             <TextInput 
                 style={estilos.input} 
@@ -57,7 +72,7 @@ export default function Cadastro() {
              <Text style={estilos.label}>email:</Text>
             <TextInput 
                 style={estilos.input} 
-                value={telefone} 
+                value={email} 
                 onChangeText={setEmail} 
                 placeholder="Digite seu email" 
                 keyboardType="phone-pad"
@@ -66,30 +81,75 @@ export default function Cadastro() {
              <Text style={estilos.label}>Endereço:</Text>
             <TextInput 
                 style={estilos.input} 
-                value={telefone} 
+                value={endereco} 
                 onChangeText={setEndereco} 
                 placeholder="Digite seu Endereço" 
+                keyboardType="phone-pad"
+            />
+            
+            <Text style={estilos.label}>Cep:</Text>
+            <TextInput 
+                style={estilos.input} 
+                value={cep} 
+                onChangeText={setCep} 
+                placeholder="Digite seu cep" 
+                keyboardType="phone-pad"
+            />
+
+             <Text style={estilos.label}>Rua:</Text>
+            <TextInput 
+                style={estilos.input} 
+                value={rua} 
+                onChangeText={setRua} 
+                placeholder="Digite sua rua" 
+                keyboardType="phone-pad"
+            />
+
+            <Text style={estilos.label}>Bairro:</Text>
+            <TextInput 
+                style={estilos.input} 
+                value={bairro} 
+                onChangeText={setBairro} 
+                placeholder="Digite seu bairro" 
+                keyboardType="phone-pad"
+            />
+
+             <Text style={estilos.label}>Cidade:</Text>
+            <TextInput 
+                style={estilos.input} 
+                value={cidade} 
+                onChangeText={setCidade} 
+                placeholder="Digite sua Cidade" 
+                keyboardType="phone-pad"
+            />
+
+            <Text style={estilos.label}>Estado:</Text>
+            <TextInput 
+                style={estilos.input} 
+                value={estado} 
+                onChangeText={setEstado} 
+                placeholder="Digite seu Estado" 
                 keyboardType="phone-pad"
             />
 
             <TouchableOpacity onPress={enviarContato}>
                 <Text style={estilos.button}>Cadastrar Contato</Text>
             </TouchableOpacity>
-        </View>
+        </ScrollView>
     )
 }
 
 const estilos = StyleSheet.create({
     container: {
-        padding: 20,
+        padding: 10,
         borderRadius: 20,
         flex: 1,
-        justifyContent: 'center',
+       
     },
 
     label: {
-        fontSize: 16,
-        marginBottom: 5,
+        fontSize: 14,
+        marginBottom: 2,
         fontWeight: 'bold',
         color: '#333',
     },
@@ -106,9 +166,8 @@ const estilos = StyleSheet.create({
 
     button: {
         backgroundColor: "#0A88C7",
-        marginTop: 10,
-        borderRadius: 18,
-        padding: 15,
+        borderRadius: 10,
+        padding: 10,
         textAlign: "center",
         color: "white",
         fontSize: 16,
