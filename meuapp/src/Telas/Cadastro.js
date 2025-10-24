@@ -144,6 +144,7 @@ const estilos = StyleSheet.create({
         padding: 10,
         borderRadius: 20,
         flex: 1,
+        height:"100vh"
        
     },
 
